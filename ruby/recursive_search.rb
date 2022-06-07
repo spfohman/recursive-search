@@ -1,5 +1,13 @@
 def recursive_search(arr, target)
   # type your code in here
+  if arr.length == 0 
+    return false 
+  end 
+  if arr[0] == target 
+    return true 
+  end
+  
+  return recursive_search(arr[1..-1], target)
 end
 
 if __FILE__ == $PROGRAM_NAME
